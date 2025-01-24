@@ -5,12 +5,13 @@ __pycache__/
 
 # C extensions
 *.so
-
+.venv/*
 # Distribution / packaging
 .Python
 build/
 develop-eggs/
 dist/
+Log/*
 downloads/
 eggs/
 .eggs/
@@ -25,7 +26,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+.vscode/*
+Log/*
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
