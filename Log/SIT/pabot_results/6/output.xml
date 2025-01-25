@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-01-25T11:27:19.072604" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC05 TESTSIT5" source="H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT5.robot">
+<test id="s1-s1-t1" name="TC01_LOGIN_PAGE" line="8">
+<msg time="2025-01-25T11:27:20.994339" level="INFO">${DataDriver_TEST_DATA} = {'ERROR': 'Test Case not found...'}</msg>
+<kw name="setup_Testcase" owner="common" type="SETUP">
+<kw name="Close_Browser" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:27:21.004536" elapsed="0.000000"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:27:20.996349" elapsed="0.010198"/>
+</kw>
+<kw name="Open_Browser" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:27:21.010565" level="INFO">Opening browser 'headlessChrome' to base url 'https://www-allonline-uat.cpall.co.th/'.</msg>
+<msg time="2025-01-25T11:27:32.779412" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-25T11:27:21.008557" elapsed="31.763973"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-25T11:27:52.773529" elapsed="18.935743"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>เปิดเบราว์เซอร์ที่ URL ที่กำหนด</doc>
+<status status="PASS" start="2025-01-25T11:27:21.006547" elapsed="50.703287"/>
+</kw>
+<arg>${MAPPING}[${ENV}][URL]</arg>
+<arg>${MAPPING}[${ENV}][BROWSER]</arg>
+<doc>URL temp</doc>
+<status status="PASS" start="2025-01-25T11:27:20.996349" elapsed="50.713485"/>
+</kw>
+<kw name="Click_btn_allmember_login" owner="All_Online_Main_page">
+<kw name="Click_Element" owner="common">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-25T11:28:11.718460" elapsed="0.269227"/>
+</kw>
+<arg>${Locator}</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="PASS" start="2025-01-25T11:28:11.716228" elapsed="0.271459"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:28:11.989693" level="INFO">Clicking element 'xpath=//*[@class="btn-allmember-login nopd onLine"]'.</msg>
+<arg>${Locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-25T11:28:11.988689" elapsed="6.303343"/>
+</kw>
+<arg>xpath=//*[@class="btn-allmember-login nopd onLine"]</arg>
+<doc>คลิกที่องค์ประกอบที่ระบุ Click Element</doc>
+<status status="PASS" start="2025-01-25T11:28:11.712188" elapsed="6.581849"/>
+</kw>
+<doc>คลิกปุ่ม Login</doc>
+<status status="PASS" start="2025-01-25T11:28:11.711088" elapsed="6.582949"/>
+</kw>
+<kw name="login_Wab_and_input_email_password" owner="login_TS">
+<kw name="Wait_Login_Page" owner="Login_page">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:28:28.685139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-25T11:28:28.685139" level="FAIL">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</msg>
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-25T11:28:18.309591" elapsed="10.388468">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<arg>xpath=//*[@class="input-email-form"]</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="FAIL" start="2025-01-25T11:28:18.306579" elapsed="10.391480">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-25T11:28:18.300029" elapsed="10.398030">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="input_email_user_login" owner="Login_page">
+<arg>${Username}</arg>
+<doc>กรอก email</doc>
+<status status="NOT RUN" start="2025-01-25T11:28:28.698059" elapsed="0.000000"/>
+</kw>
+<kw name="input_password_user_login" owner="Login_page">
+<arg>${password}</arg>
+<doc>กรอก password</doc>
+<status status="NOT RUN" start="2025-01-25T11:28:28.698059" elapsed="0.000000"/>
+</kw>
+<kw name="Click_login_Button" owner="Login_page">
+<status status="NOT RUN" start="2025-01-25T11:28:28.698059" elapsed="0.000000"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<doc>กรอกข้อมูลเเละ Login</doc>
+<status status="FAIL" start="2025-01-25T11:28:18.295046" elapsed="10.403013">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Close_Browser" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:28:28.698059" elapsed="4.885460"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:28:28.698059" elapsed="4.885460"/>
+</kw>
+<doc>ลูกค้าlOGINสำเร็จ</doc>
+<tag>TC_01</tag>
+<status status="FAIL" start="2025-01-25T11:27:20.992303" elapsed="72.591216">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t2" name="TC02_LOGIN AND SEARD ITEM" line="13">
+<msg time="2025-01-25T11:28:33.587577" level="INFO">${DataDriver_TEST_DATA} = {'ERROR': 'Test Case not found...'}</msg>
+<kw name="setup_Testcase" owner="common" type="SETUP">
+<kw name="Close_Browser" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:28:33.591619" elapsed="0.000000"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:28:33.589601" elapsed="0.002018"/>
+</kw>
+<kw name="Open_Browser" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:28:33.593642" level="INFO">Opening browser 'headlessChrome' to base url 'https://www-allonline-uat.cpall.co.th/'.</msg>
+<msg time="2025-01-25T11:28:45.154437" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-25T11:28:33.593642" elapsed="29.310625"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-25T11:29:02.905269" elapsed="7.829673"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>เปิดเบราว์เซอร์ที่ URL ที่กำหนด</doc>
+<status status="PASS" start="2025-01-25T11:28:33.591619" elapsed="37.143323"/>
+</kw>
+<arg>${MAPPING}[${ENV}][URL]</arg>
+<arg>${MAPPING}[${ENV}][BROWSER]</arg>
+<doc>URL temp</doc>
+<status status="PASS" start="2025-01-25T11:28:33.589601" elapsed="37.149332"/>
+</kw>
+<kw name="Click_btn_allmember_login" owner="All_Online_Main_page">
+<kw name="Click_Element" owner="common">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-25T11:29:10.744935" elapsed="0.731754"/>
+</kw>
+<arg>${Locator}</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="PASS" start="2025-01-25T11:29:10.743939" elapsed="0.733755"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:29:11.479688" level="INFO">Clicking element 'xpath=//*[@class="btn-allmember-login nopd onLine"]'.</msg>
+<arg>${Locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-25T11:29:11.477694" elapsed="6.746609"/>
+</kw>
+<arg>xpath=//*[@class="btn-allmember-login nopd onLine"]</arg>
+<doc>คลิกที่องค์ประกอบที่ระบุ Click Element</doc>
+<status status="PASS" start="2025-01-25T11:29:10.741943" elapsed="7.482360"/>
+</kw>
+<doc>คลิกปุ่ม Login</doc>
+<status status="PASS" start="2025-01-25T11:29:10.739936" elapsed="7.484367"/>
+</kw>
+<kw name="login_Wab_and_input_email_password" owner="login_TS">
+<kw name="Wait_Login_Page" owner="Login_page">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:29:28.684555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-25T11:29:28.684555" level="FAIL">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</msg>
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-25T11:29:18.229299" elapsed="10.456261">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<arg>xpath=//*[@class="input-email-form"]</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="FAIL" start="2025-01-25T11:29:18.228304" elapsed="10.458255">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-25T11:29:18.226301" elapsed="10.460258">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="input_email_user_login" owner="Login_page">
+<arg>${Username}</arg>
+<doc>กรอก email</doc>
+<status status="NOT RUN" start="2025-01-25T11:29:28.686559" elapsed="0.000000"/>
+</kw>
+<kw name="input_password_user_login" owner="Login_page">
+<arg>${password}</arg>
+<doc>กรอก password</doc>
+<status status="NOT RUN" start="2025-01-25T11:29:28.687560" elapsed="0.000000"/>
+</kw>
+<kw name="Click_login_Button" owner="Login_page">
+<status status="NOT RUN" start="2025-01-25T11:29:28.687560" elapsed="0.000000"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<doc>กรอกข้อมูลเเละ Login</doc>
+<status status="FAIL" start="2025-01-25T11:29:18.225311" elapsed="10.462249">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="search_item_by_keyword_input" owner="main_TS">
+<arg>${SEARCH}</arg>
+<doc>ค้นหาคำที่ต้องการเเละกด ค้นหา</doc>
+<status status="NOT RUN" start="2025-01-25T11:29:28.688560" elapsed="0.000000"/>
+</kw>
+<kw name="Click_Image_item" owner="All_Online_Main_page">
+<arg>${SHOTNAME}</arg>
+<doc>คลิก iem ที่ต้องการ</doc>
+<status status="NOT RUN" start="2025-01-25T11:29:28.688560" elapsed="0.000000"/>
+</kw>
+<kw name="Close_Browser" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:29:28.690560" elapsed="9.879723"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:29:28.689561" elapsed="9.880722"/>
+</kw>
+<doc>ตรวจสอบการ Search ข้อมูลสินค้า</doc>
+<tag>TC_02</tag>
+<status status="FAIL" start="2025-01-25T11:28:33.583519" elapsed="64.986764">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t3" name="TC04_customer_successfully_placed_order" line="20">
+<msg time="2025-01-25T11:29:38.570283" level="INFO">${DataDriver_TEST_DATA} = {'ERROR': 'Test Case not found...'}</msg>
+<kw name="setup_Testcase" owner="common" type="SETUP">
+<kw name="Close_Browser" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:29:38.570283" elapsed="0.000000"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:29:38.570283" elapsed="0.000000"/>
+</kw>
+<kw name="Open_Browser" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:29:38.582171" level="INFO">Opening browser 'headlessChrome' to base url 'https://www-allonline-uat.cpall.co.th/'.</msg>
+<msg time="2025-01-25T11:29:51.065399" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-25T11:29:38.570283" elapsed="24.595763"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-25T11:30:03.166046" elapsed="0.139908"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>เปิดเบราว์เซอร์ที่ URL ที่กำหนด</doc>
+<status status="PASS" start="2025-01-25T11:29:38.570283" elapsed="24.737691"/>
+</kw>
+<arg>${MAPPING}[${ENV}][URL]</arg>
+<arg>${MAPPING}[${ENV}][BROWSER]</arg>
+<doc>URL temp</doc>
+<status status="PASS" start="2025-01-25T11:29:38.570283" elapsed="24.737691"/>
+</kw>
+<kw name="Click_btn_allmember_login" owner="All_Online_Main_page">
+<kw name="Click_Element" owner="common">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-25T11:30:03.313241" elapsed="1.299656"/>
+</kw>
+<arg>${Locator}</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="PASS" start="2025-01-25T11:30:03.311176" elapsed="1.301721"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:30:04.614922" level="INFO">Clicking element 'xpath=//*[@class="btn-allmember-login nopd onLine"]'.</msg>
+<arg>${Locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-25T11:30:04.614922" elapsed="3.041243"/>
+</kw>
+<arg>xpath=//*[@class="btn-allmember-login nopd onLine"]</arg>
+<doc>คลิกที่องค์ประกอบที่ระบุ Click Element</doc>
+<status status="PASS" start="2025-01-25T11:30:03.309991" elapsed="4.347174"/>
+</kw>
+<doc>คลิกปุ่ม Login</doc>
+<status status="PASS" start="2025-01-25T11:30:03.307974" elapsed="4.350205"/>
+</kw>
+<kw name="login_Wab_and_input_email_password" owner="login_TS">
+<kw name="Wait_Login_Page" owner="Login_page">
+<kw name="Wait_Page" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-25T11:30:18.152952" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-25T11:30:18.153707" level="FAIL">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</msg>
+<arg>${Locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-25T11:30:07.664892" elapsed="10.492296">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<arg>xpath=//*[@class="input-email-form"]</arg>
+<doc>รอจนกว่าจะพบช่อง Page Should Contain</doc>
+<status status="FAIL" start="2025-01-25T11:30:07.662185" elapsed="10.496240">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-25T11:30:07.661182" elapsed="10.498345">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="input_email_user_login" owner="Login_page">
+<arg>${Username}</arg>
+<doc>กรอก email</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.160350" elapsed="0.000000"/>
+</kw>
+<kw name="input_password_user_login" owner="Login_page">
+<arg>${password}</arg>
+<doc>กรอก password</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.160931" elapsed="0.000608"/>
+</kw>
+<kw name="Click_login_Button" owner="Login_page">
+<status status="NOT RUN" start="2025-01-25T11:30:18.162257" elapsed="0.000547"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<doc>กรอกข้อมูลเเละ Login</doc>
+<status status="FAIL" start="2025-01-25T11:30:07.659179" elapsed="10.504160">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="search_item_by_keyword_input" owner="main_TS">
+<arg>${SEARCH}</arg>
+<doc>ค้นหาคำที่ต้องการเเละกด ค้นหา</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.167412" elapsed="0.000554"/>
+</kw>
+<kw name="Click_item_and_and_Store_id" owner="main_TS">
+<arg>${SHOTNAME}</arg>
+<arg>${STORE}</arg>
+<doc>กรอกข้อมูล เเละ เลขร้าน</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.169095" elapsed="0.001012"/>
+</kw>
+<kw name="payment_input_data_CC_and_payment" owner="CS_payment_TS">
+<arg>${NAMECC}</arg>
+<arg>${NUMBERCC}</arg>
+<arg>${EXDADECC}</arg>
+<arg>${CVCODECC}</arg>
+<doc>กรอกข้อมูล เเละ ยืนยัน ที่หน้าจอชำระ</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.171113" elapsed="0.000727"/>
+</kw>
+<kw name="payment_input_OTP" owner="CS_payment_TS">
+<arg>${OTPNO}</arg>
+<doc>กรอกข้อมูล เเละ ยืนยัน ที่หน้าจอชำระ</doc>
+<status status="NOT RUN" start="2025-01-25T11:30:18.171840" elapsed="0.001020"/>
+</kw>
+<kw name="Close_Browser" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-25T11:30:18.175389" elapsed="4.953721"/>
+</kw>
+<doc>ปิดเบราว์เซอร์เมื่อเสร็จสิ้นการทดสอบ</doc>
+<status status="PASS" start="2025-01-25T11:30:18.174375" elapsed="4.954735"/>
+</kw>
+<doc>ลูกค้าสั่งซื้อสินค้าเลือกรับที่ร้านและชำระเงินด้วยบัตรเดบิต CASE FOCUS การส่ง เเละวิธีการสั่งซื้อ</doc>
+<tag>TC_05</tag>
+<status status="FAIL" start="2025-01-25T11:29:38.570283" elapsed="44.558827">Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2025-01-25T11:27:19.206338" elapsed="183.924791"/>
+</suite>
+<status status="FAIL" start="2025-01-25T11:27:19.172164" elapsed="183.960996"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TC_01</stat>
+<stat pass="0" fail="1" skip="0">TC_02</stat>
+<stat pass="0" fail="1" skip="0">TC_05</stat>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="3" skip="0">Suites</stat>
+<stat name="TC05 TESTSIT5" id="s1-s1" pass="0" fail="3" skip="0">Suites.TC05 TESTSIT5</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-25T11:27:20.909571" level="WARN">Error in file 'H:\gosoft-thailand\AllOnlineBot\common\common.robot' on line 52: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-01-25T11:27:20.978032" level="ERROR">[ DataDriver ] Error in robot file:
+  File "H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT5.robot", line 0</msg>
+<msg time="2025-01-25T11:27:20.978032" level="ERROR">In source file:
+  File "Workshop-Group-5.xlsx", line 0</msg>
+<msg time="2025-01-25T11:27:20.990290" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ImportError: Requirements (pandas, openpyxl) for XLSX support are not installed.
+    Use 'pip install -U robotframework-datadriver[XLS]' to install XLSX support.</msg>
+<msg time="2025-01-25T11:27:32.779412" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-01-25T11:28:45.154437" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-01-25T11:29:51.065399" level="WARN">The chromedriver version (131.0.6778.265) detected in PATH at D:\ProgramFile\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.84); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

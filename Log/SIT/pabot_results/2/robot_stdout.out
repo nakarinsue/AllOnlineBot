@@ -1,0 +1,87 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TC05 TESTSIT1                                                          
+==============================================================================
+TC01_LOGIN_PAGE :: ลูกค้าlOGINสำเร็จ                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:8
+    T:  TC01_LOGIN_PAGE    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:12
+      login_Wab_and_input_email_password    ${email}    ${password}
+      |  ${email} = dummy (str)
+      |  ${password} = dummy (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\keywords\login_TS.robot:7
+      Wait_Login_Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\pages\Login_page.robot:15
+      Wait_Page    xpath=//*[@class="input-email-form"]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\common\common.robot:85
+      Wait Until Element Is Visible    ${Locator}    ${timeout}
+      |  ${Locator} = xpath=//*[@class="input-email-form"] (str)
+      |  ${timeout} = 10 (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.
+------------------------------------------------------------------------------
+TC02_LOGIN AND SEARD ITEM :: ตรวจสอบการ Search ข้อมูลสินค้า             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:13
+    T:  TC02_LOGIN AND SEARD ITEM    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:17
+      login_Wab_and_input_email_password    ${email}    ${password}
+      |  ${email} = dummy (str)
+      |  ${password} = dummy (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\keywords\login_TS.robot:7
+      Wait_Login_Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\pages\Login_page.robot:15
+      Wait_Page    xpath=//*[@class="input-email-form"]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\common\common.robot:85
+      Wait Until Element Is Visible    ${Locator}    ${timeout}
+      |  ${Locator} = xpath=//*[@class="input-email-form"] (str)
+      |  ${timeout} = 10 (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.
+------------------------------------------------------------------------------
+TC04_customer_successfully_placed_order :: ลูกค้าสั่งซื้อสินค้าเลื...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:20
+    T:  TC04_customer_successfully_placed_order    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\Test\TC05_TESTSIT1.robot:24
+      login_Wab_and_input_email_password    ${email}    ${password}
+      |  ${email} = dummy (str)
+      |  ${password} = dummy (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\keywords\login_TS.robot:7
+      Wait_Login_Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\pages\Login_page.robot:15
+      Wait_Page    xpath=//*[@class="input-email-form"]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  H:\gosoft-thailand\AllOnlineBot\common\common.robot:85
+      Wait Until Element Is Visible    ${Locator}    ${timeout}
+      |  ${Locator} = xpath=//*[@class="input-email-form"] (str)
+      |  ${timeout} = 10 (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=//*[@class="input-email-form"]' not visible after 10 seconds.
+------------------------------------------------------------------------------
+Suites.TC05 TESTSIT1                                                  | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Suites                                                                | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  H:\gosoft-thailand\AllOnlineBot\Log\SIT\pabot_results\2\output.xml
