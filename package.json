@@ -1,0 +1,27 @@
+{
+  "name": "allonline",
+  "version": "0.0.1",
+  "description": "AllOnlineBot is an automated testing framework designed specifically for testing the functionality and user experience of ALL Online e-commerce platform.",
+  "main": "index.js",
+  "scripts": {
+    "Docker_build": "docker build -t robot-framework .",
+    "Docker_run": "docker run --rm -v %cd%:/robot_tests pabot -d Log  -i TC_05 -v ENV:TEST Test\\TC05_placed_order.robot",
+    "RUN_DEV": "robot --dryrun -d Log/DEV -v ENV:DEV Test\\TC05_placed_order.robot",
+    "RUN_TEST": "robot -d Log/TEST -i TC_05 -v ENV:DEV Test\\TC05_placed_order.robot ",
+    "RUN_SIT": "pabot -d Log/SIT -v ENV:TEST Test\\*",
+    "RUN_UAT": "robot -d Log/UAT -i TC_05 -v ENV:UAT Test\\TC05_placed_order.robot && robotmetrics --inputpath ./Log/ --output output.xml",
+    "Export_File": "robotmetrics --inputpath ./Log/UAT --output output.xml"
+  },
+  "keywords": [],
+  "author": "NAKARIN_SUE",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakarinsue/AllOnlineBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nakarinsue/AllOnlineBot/issues"
+  },
+  "homepage": "https://github.com/nakarinsue/AllOnlineBot#readme"
+}

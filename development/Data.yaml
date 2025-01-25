@@ -1,0 +1,19 @@
+
+email:  dummy
+password:  dummy
+SEARCH: ฉัตร
+SHOTNAME:   ฉัตรทองข้าวหอมมะลิ
+LONGNAME:   ฉัตรทองข้าวหอมมะลิ 100% ขนาด 5 กิโลกรัม
+STORE: 09884
+OTPNO:  dummy
+MAPPING:
+    DEV:
+        BROWSER:    Chrome  
+        URL:    https://www-allonline-uat.cpall.co.th/
+    UAT:
+        BROWSER:    headlessChrome
+        URL:    https://www.allonline.7eleven.co.th/   
+    TEST:
+        BROWSER:    headlessChrome  
+        URL:    https://www-allonline-uat.cpall.co.th/
+
